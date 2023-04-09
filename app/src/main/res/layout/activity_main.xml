@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Download_Image_AsyncTask"
+            android:layout_weight="1"
+            android:text="@string/download"
+            tools:ignore="VisualLintButtonSize" />
+
+        <EditText
+            android:id="@+id/texturl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enter_url"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="LabelFor,NestedWeights,VisualLintTextFieldSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <fragment
+            android:id="@+id/frag1"
+            class="com.example.myapplication.ImageFragment"
+            android:layout_width="344dp"
+            android:layout_height="152dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights,TextSizeCheck">
+
+        </fragment>
+
+        <fragment
+            android:id="@+id/frag2"
+            class="com.example.myapplication.ImageFragment"
+            android:layout_width="344dp"
+            android:layout_height="156dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            tools:ignore="FragmentTagUsage,TextSizeCheck">
+
+        </fragment>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <fragment
+            android:id="@+id/frag3"
+            class="com.example.myapplication.ImageFragment"
+            android:layout_width="344dp"
+            android:layout_height="172dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights,TextSizeCheck">
+
+        </fragment>
+
+        <fragment
+            android:id="@+id/frag4"
+            class="com.example.myapplication.ImageFragment"
+            android:layout_width="344dp"
+            android:layout_height="176dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            tools:ignore="TextSizeCheck">
+
+        </fragment>
+
+    </LinearLayout>
+
+</LinearLayout>
